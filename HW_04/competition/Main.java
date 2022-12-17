@@ -32,7 +32,7 @@ public class Main {
         wall2.overcome(member3);
         wall3.overcome(member3);
 
-        System.out.println("\nЗмагання: \n");
+        System.out.println("\nCompetition: \n");
 
         Member[] members = new Member[]{new Cat(), new Human(), new Robot()};
         Obstacle[] obstacles = new Obstacle[]{new RunningTrack(200), new Wall(1.6)};

@@ -10,17 +10,17 @@ public class RunningTrack extends Obstacle {
 
         String obstacleName = RunningTrack.class.getSimpleName();
         String memberName = member.getClass().getSimpleName();
-        if (member.run(length)  & member.igGoingOn) {
+        if (member.run(length)  && member.igGoingOn) {
             System.out.println(memberName +
-                    " пробіг " + length + " м. на " + obstacleName + ".");
+                    " run " + length + " m. on " + obstacleName + ".");
         }
 
-        if (!member.run(length) & member.igGoingOn) {
+        if (!member.run(length) && member.igGoingOn) {
             System.out.print(memberName +
-                    " не пробіг " + length + " м. на " + obstacleName + ", пройдено: " +
-                    member.runLimit + " м. ");
+                    " didn't run " + length + " m. on " + obstacleName + ", passed: " +
+                    member.runLimit + " m. ");
             member.igGoingOn = false;
-            System.out.println(memberName + " вибув.");
+            System.out.println(memberName + " drop out.");
         }
     }
 }
